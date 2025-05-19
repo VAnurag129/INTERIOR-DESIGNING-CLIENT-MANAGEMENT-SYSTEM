@@ -1,0 +1,299 @@
+/* Summary Cards */
+.summaryCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Action Buttons */
+.actionButtons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.newProjectBtn,
+.addClientBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.newProjectBtn {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.newProjectBtn:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.addClientBtn {
+    background-color: white;
+    color: #555;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.addClientBtn:hover {
+    background-color: #f9f9f9;
+}
+
+/* Project Section */
+.projectsSection,
+.clientsSection {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.sectionHeader h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.viewAll {
+    color: var(--primary-color, #3498db);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.viewAll:hover {
+    text-decoration: underline;
+}
+
+/* Project Cards */
+.projectCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.projectCard {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1.2rem;
+    border-top: 3px solid var(--project-color, #3498db);
+}
+
+.projectCard h3 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.projectStatus {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.projectMeta {
+    margin-bottom: 0.8rem;
+}
+
+.projectClient {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.progressWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.progressLabel {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.progressBar {
+    width: 100%;
+    height: 8px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background-color: var(--progress-color, #3498db);
+    border-radius: 4px;
+}
+
+.progressPercent {
+    font-size: 0.8rem;
+    color: #666;
+    align-self: flex-end;
+}
+
+.projectFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #f1f1f1;
+}
+
+.projectDate {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.detailsBtn {
+    color: var(--primary-color, #3498db);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.detailsBtn:hover {
+    text-decoration: underline;
+}
+
+/* Project Status Colors */
+.completed {
+    border-top-color: var(--completed-color, #2ecc71);
+}
+
+.inProgress {
+    border-top-color: var(--in-progress-color, #f39c12);
+}
+
+.pending {
+    border-top-color: var(--pending-color, #95a5a6);
+}
+
+/* Client Cards */
+.clientCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.clientCard {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1.2rem;
+}
+
+.clientHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.clientInitials {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--client-color, #3498db);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.clientInfo h3 {
+    font-size: 1rem;
+    margin: 0 0 0.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.clientType {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.clientContact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.clientEmail,
+.clientPhone,
+.clientLocation {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.clientFooter {
+    text-align: center;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #f1f1f1;
+}
+
+.viewDetailsBtn {
+    color: var(--primary-color, #3498db);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.viewDetailsBtn:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+
+    .summaryCards,
+    .projectCards,
+    .clientCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboardHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+
+
+    .summaryCards,
+    .projectCards,
+    .clientCards {
+        grid-template-columns: 1fr;
+    }
+
+    .actionButtons {
+        flex-direction: column;
+    }
+}

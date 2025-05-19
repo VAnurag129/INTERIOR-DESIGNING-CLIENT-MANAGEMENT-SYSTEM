@@ -1,0 +1,269 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    font-family: var(--font-body);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: var(--color-text);
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    height: 70px;
+    z-index: 1001;
+    position: relative;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoButton {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.logoButton:hover {
+    transform: scale(1.15);
+}
+
+.logo {
+    font-weight: 1000;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcomeMessage {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.headerAvatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.headerAvatar:hover {
+    transform: scale(1.05);
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: calc(100vh - 70px);
+    width: 250px;
+    background: linear-gradient(to bottom, #fff 0%, #fcfaf8 100%);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    /* transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; */
+    z-index: 1000;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    border-right: 1px solid #f0f0f0;
+}
+
+.collapsed {
+    transform: translateX(-100%);
+    box-shadow: none;
+    opacity: 0;
+}
+
+/* Content remains static */
+.content {
+    flex: 1;
+    padding: 25px;
+    background-color: #fafafa;
+    min-height: calc(100vh - 70px);
+    transition: filter 0.3s ease;
+    /* Smooth transition for the blur effect */
+}
+
+.content.blurred {
+    filter: blur(3px);
+    pointer-events: none;
+}
+
+/* Sidebar structure */
+.sidebarContent {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebarDivider {
+    height: 1px;
+    margin: 10px 16px;
+    background: linear-gradient(to right, rgba(159, 134, 101, 0.05), rgba(159, 134, 101, 0.2), rgba(159, 134, 101, 0.05));
+}
+
+/* User Profile Section */
+.userProfile {
+    padding: 15px;
+    background-color: rgba(159, 134, 101, 0.05);
+    border-top: 1px solid rgba(159, 134, 101, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    /* Push to bottom */
+}
+
+.profileAvatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #c0ae9c 0%, #9f8665 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.avatarInitials {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.profileInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.profileName {
+    font-weight: 500;
+    color: #4d4a43;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profileRole {
+    color: #a19e96;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logoutButton {
+    background: none;
+    border: none;
+    color: #9f8665;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.logoutButton:hover {
+    background-color: rgba(159, 134, 101, 0.1);
+}
+
+.collapsedLogoutButton {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #9f8665;
+    cursor: pointer;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    transition: background-color 0.2s;
+}
+
+.collapsedLogoutButton:hover {
+    background-color: rgba(159, 134, 101, 0.1);
+}
+
+/* Custom styling for the sidebar menu items */
+:global(.ps-sidebar-root) {
+    background: transparent !important;
+    border: none !important;
+    height: 100% !important;
+}
+
+:global(.ps-menu-button) {
+    padding: 15px 24px !important;
+    font-size: 0.95rem !important;
+    color: var(--color-text) !important;
+    transition: all 0.2s ease !important;
+    border-left: 3px solid transparent !important;
+}
+
+:global(.ps-menu-button:hover) {
+    background-color: rgba(159, 134, 101, 0.08) !important;
+    color: var(--color-primary) !important;
+}
+
+:global(.ps-active) {
+    color: var(--color-primary) !important;
+    font-weight: 500 !important;
+}
+
+:global(.ps-menu-icon) {
+    margin-right: 12px !important;
+    color: currentColor !important;
+    opacity: 0.85 !important;
+}
+
+:global(.ps-active .ps-menu-icon) {
+    opacity: 1 !important;
+}
+
+:global(.ps-menu-label) {
+    letter-spacing: 0.01em;
+}
+
+/* Add a decorative element at the top of the sidebar */
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #c0ae9c, #9f8665, #856c56);
+}

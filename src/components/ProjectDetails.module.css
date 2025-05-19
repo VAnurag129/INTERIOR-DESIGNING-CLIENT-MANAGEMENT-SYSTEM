@@ -1,0 +1,64 @@
+.detailsModal {
+    max-width: 90%;
+}
+
+.progressWrapper {
+    margin-top: 1.5rem;
+}
+
+.moodboardContainer {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.moodboardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 15px;
+}
+
+.moodboardImageWrapper {
+    position: relative;
+    padding-top: 100%;
+    /* 1:1 aspect ratio */
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.moodboardImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.moodboardImageWrapper:hover .moodboardImage {
+    transform: scale(1.05);
+}
+
+.removeImageBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.moodboardImageWrapper:hover .removeImageBtn {
+    opacity: 1;
+}

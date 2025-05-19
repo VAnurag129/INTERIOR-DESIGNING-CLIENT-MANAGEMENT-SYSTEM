@@ -1,0 +1,70 @@
+.projectCard {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    /* Set fixed height for consistency */
+}
+
+.projectCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.projectCard .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+}
+
+.progressWrapper {
+    margin-top: 15px;
+}
+
+.projectStatus {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.projectImage {
+    height: 225px;
+    /* Exactly half of card height */
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    width: 100%;
+}
+
+.projectCard:hover .projectImage {
+    opacity: 0.9;
+}
+
+.moodboardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.moodboardImage {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.moodboardImage:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .projectImage {
+        height: 150px;
+    }
+}

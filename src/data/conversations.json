@@ -1,0 +1,236 @@
+{
+  "conversations": [
+    {
+      "id": "conv_001",
+      "participants": ["client_001", "designer_001"],
+      "project_id": "project_001",
+      "messages": [
+        {
+          "id": "msg_001",
+          "sender": "client_001",
+          "content": "Hi Emma, I was wondering about the progress on the initial concepts?",
+          "timestamp": "2023-06-05T10:15:30Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_002",
+          "sender": "designer_001",
+          "content": "Hi John, I've just uploaded the initial concepts for your review. Let me know what you think about the open floor plan option.",
+          "timestamp": "2023-06-05T11:30:45Z",
+          "read": true,
+          "attachments": ["attachment_001"]
+        },
+        {
+          "id": "msg_003",
+          "sender": "client_001",
+          "content": "Thanks Emma! I really like the open floor plan concept. Can we explore some different color palettes for it?",
+          "timestamp": "2023-06-06T09:15:30Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_004",
+          "sender": "designer_001",
+          "content": "Absolutely! I'll work on some color options and share them with you by tomorrow.",
+          "timestamp": "2023-06-06T10:45:22Z",
+          "read": true,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "conv_002",
+      "participants": ["designer_001", "vendor_001"],
+      "project_id": "project_001",
+      "messages": [
+        {
+          "id": "msg_005",
+          "sender": "designer_001",
+          "content": "Michael, do you have the walnut veneer in stock for the Acme project?",
+          "timestamp": "2023-07-03T09:20:15Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_006",
+          "sender": "vendor_001",
+          "content": "Hi Emma, we're currently out of stock but expecting a shipment next week. Would that work for your timeline?",
+          "timestamp": "2023-07-03T10:05:30Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_007",
+          "sender": "designer_001",
+          "content": "That should be fine. Can you reserve about 200 sq ft for me?",
+          "timestamp": "2023-07-03T10:30:45Z",
+          "read": true,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "conv_003",
+      "participants": ["client_002", "designer_002"],
+      "project_id": "project_002",
+      "messages": [
+        {
+          "id": "msg_008",
+          "sender": "designer_002",
+          "content": "Hello Pepper, I've finalized the lab layout as we discussed. Would you like to schedule a walkthrough of the 3D model?",
+          "timestamp": "2023-11-15T14:30:00Z",
+          "read": true,
+          "attachments": ["attachment_002"]
+        },
+        {
+          "id": "msg_009",
+          "sender": "client_002",
+          "content": "That would be great, Alex. How about Thursday at 2pm?",
+          "timestamp": "2023-11-15T15:45:20Z",
+          "read": true,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "conv_004",
+      "participants": ["client_003", "designer_001"],
+      "project_id": "project_003",
+      "messages": [
+        {
+          "id": "msg_010",
+          "sender": "client_003",
+          "content": "Emma, I've been thinking about the kitchen space in the villa. Can we add more counter space?",
+          "timestamp": "2024-01-20T11:10:30Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_011",
+          "sender": "designer_001",
+          "content": "Hi Michael, definitely! I'll revise the kitchen layout to include more counter space. Are you thinking of an island or extending the existing counters?",
+          "timestamp": "2024-01-20T13:25:45Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_012",
+          "sender": "client_003",
+          "content": "I'd prefer an island if it fits with the flow of the space.",
+          "timestamp": "2024-01-20T14:05:10Z",
+          "read": true,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "conv_005",
+      "participants": ["client_004", "designer_002"],
+      "project_id": "project_004",
+      "messages": [
+        {
+          "id": "msg_013",
+          "sender": "designer_002",
+          "content": "Alice, I've attached the final renderings for the lobby renovation. All materials have been ordered as well.",
+          "timestamp": "2023-11-20T09:30:15Z",
+          "read": true,
+          "attachments": ["attachment_003", "attachment_004"]
+        },
+        {
+          "id": "msg_014",
+          "sender": "client_004",
+          "content": "These look amazing, Alex! The board is really happy with the direction. When do you expect installation to begin?",
+          "timestamp": "2023-11-20T11:45:30Z",
+          "read": true,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "conv_006",
+      "participants": ["client_005", "designer_001"],
+      "project_id": "project_005",
+      "messages": [
+        {
+          "id": "msg_015",
+          "sender": "client_005",
+          "content": "Emma, have you selected the lighting fixtures for the master bedroom yet?",
+          "timestamp": "2024-02-15T16:20:00Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_016",
+          "sender": "designer_001",
+          "content": "Hi Sophia, I have narrowed it down to three options. I'll send you the catalog links shortly so you can see them.",
+          "timestamp": "2024-02-15T17:05:45Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_017",
+          "sender": "designer_001",
+          "content": "Here are the three lighting options as promised. The first one is my personal favorite for your space.",
+          "timestamp": "2024-02-15T17:30:20Z",
+          "read": false,
+          "attachments": ["attachment_005", "attachment_006", "attachment_007"]
+        }
+      ]
+    },
+    {
+      "id": "conv_007",
+      "participants": ["client_006", "designer_002"],
+      "project_id": "project_006",
+      "messages": [
+        {
+          "id": "msg_018",
+          "sender": "client_006",
+          "content": "Alex, our team is growing faster than expected. Can we revise the office plan to accommodate 5 more workstations?",
+          "timestamp": "2024-03-10T10:15:20Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_019",
+          "sender": "designer_002",
+          "content": "David, that's great news about your team growth! I'll take a look at the floor plan and see how we can best integrate the additional workstations without compromising the flow.",
+          "timestamp": "2024-03-10T11:30:40Z",
+          "read": true,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "conv_008",
+      "participants": ["client_007", "designer_001"],
+      "project_id": "project_007",
+      "messages": [
+        {
+          "id": "msg_020",
+          "sender": "designer_001",
+          "content": "Richard, the museum installation is complete. I've attached photos of the finished space.",
+          "timestamp": "2023-12-05T15:45:10Z",
+          "read": true,
+          "attachments": ["attachment_008", "attachment_009", "attachment_010"]
+        },
+        {
+          "id": "msg_021",
+          "sender": "client_007",
+          "content": "Emma, this is spectacular! The board is thrilled with how the exhibits look in the new space. Thank you for your exceptional work.",
+          "timestamp": "2023-12-05T16:30:25Z",
+          "read": true,
+          "attachments": []
+        },
+        {
+          "id": "msg_022",
+          "sender": "designer_001",
+          "content": "I'm so glad you're happy with the result! It was a pleasure working on such a meaningful project.",
+          "timestamp": "2023-12-05T17:05:15Z",
+          "read": true,
+          "attachments": []
+        }
+      ]
+    }
+  ]
+}

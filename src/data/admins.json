@@ -1,0 +1,22 @@
+{
+  "admins": [
+    {
+      "id": "admin_001",
+      "name": "Sarah Johnson",
+      "email": "sarah@designsystem.com",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
+      "role": "super_admin",
+      "permissions": ["manage_users", "view_financials", "system_settings"],
+      "last_active": "2024-02-20T14:25:00Z"
+    },
+    {
+      "id": "admin_002",
+      "name": "Carlos Mendez",
+      "email": "carlos@designsystem.com",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      "role": "support_admin",
+      "permissions": ["manage_tickets", "view_projects"],
+      "last_active": "2024-02-18T09:12:00Z"
+    }
+  ]
+}

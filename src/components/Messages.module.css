@@ -1,0 +1,404 @@
+/* Messages Container */
+.messagesContainer {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+}
+
+.pageTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.messagesLayout {
+    display: flex;
+    height: calc(100% - 60px);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Loading State */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Sidebar */
+.conversationsSidebar {
+    flex: 0 0 320px;
+    border-right: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+}
+
+.sidebarHeader {
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fff;
+}
+
+.searchContainer {
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.6rem 1rem 0.6rem 2.25rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: #4299e1;
+}
+
+.filtersContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filterLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.filterSelect {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    background-color: #fff;
+}
+
+.filterSelect:focus {
+    outline: none;
+    border-color: #4299e1;
+}
+
+.conversationsList {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.conversationItem {
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.conversationItem:hover {
+    background-color: #f0f4f8;
+}
+
+.conversationItem.active {
+    background-color: #ebf5ff;
+    border-left: 3px solid #3182ce;
+}
+
+.participantInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.participantAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3182ce;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.participantDetails {
+    flex: 1;
+    min-width: 0;
+}
+
+.participantName {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.projectName {
+    font-size: 0.8rem;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.messageTime {
+    font-size: 0.75rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+.messagePreview {
+    font-size: 0.85rem;
+    color: #666;
+    margin-left: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.attachmentIndicator {
+    font-size: 0.8rem;
+    color: #666;
+    margin-left: 3rem;
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.noResults {
+    padding: 2rem;
+    text-align: center;
+    color: #666;
+}
+
+/* Main Conversation Area */
+.conversationMain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.conversationHeader {
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #f9fafb;
+}
+
+.conversationTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #333;
+}
+
+.conversationSubtitle {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.messagesArea {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f9fafb;
+}
+
+.messageItem {
+    display: flex;
+    max-width: 80%;
+}
+
+.receivedMessage {
+    align-self: flex-start;
+}
+
+.sentMessage {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.messageAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #3182ce;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.messageContent {
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.sentMessage .messageContent {
+    background-color: #ebf5ff;
+}
+
+.messageSender {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #3182ce;
+}
+
+.messageText {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.messageTimestamp {
+    font-size: 0.7rem;
+    color: #999;
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.messageAttachments {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.attachment {
+    font-size: 0.8rem;
+    color: #3182ce;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+.messageComposer {
+    padding: 1rem;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.messageInput {
+    width: 100%;
+    resize: none;
+    min-height: 80px;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.messageInput:focus {
+    outline: none;
+    border-color: #4299e1;
+}
+
+.messageActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attachButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f0f4f8;
+    border: none;
+    color: #3182ce;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.attachButton:hover {
+    background-color: #e6f0ff;
+}
+
+.sendButton {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sendButton:hover {
+    background-color: #2c5282;
+}
+
+.sendButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.5);
+}
+
+/* No conversation selected state */
+.noConversationSelected {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.noConversationMessage {
+    text-align: center;
+    color: #666;
+}
+
+.noConversationMessage h3 {
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+}
+
+.noConversationMessage p {
+    font-size: 0.9rem;
+}

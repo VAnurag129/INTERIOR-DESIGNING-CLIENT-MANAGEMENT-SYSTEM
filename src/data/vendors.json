@@ -1,0 +1,34 @@
+{
+  "vendors": [
+    {
+      "id": "vendor_001",
+      "name": "Premium Materials Co.",
+      "contact": "Michael Brown",
+      "email": "michael@premiummaterials.com",
+      "avatar": "https://images.unsplash.com/photo-1552058544-f2b08422138a",
+      "materials": ["wood", "metal", "glass"],
+      "lead_time_days": 14,
+      "rating": 4.6
+    },
+    {
+      "id": "vendor_002",
+      "name": "Eco Textiles Ltd.",
+      "contact": "Lisa Green",
+      "email": "lisa@ecotextiles.com",
+      "avatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4",
+      "materials": ["fabric", "upholstery"],
+      "lead_time_days": 7,
+      "rating": 4.8
+    },
+    {
+      "id": "vendor_003",
+      "name": "Modern Lighting Solutions",
+      "contact": "David Chen",
+      "email": "david@modernlighting.com",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+      "materials": ["lighting", "electrical", "fixtures"],
+      "lead_time_days": 10,
+      "rating": 4.5
+    }
+  ]
+}

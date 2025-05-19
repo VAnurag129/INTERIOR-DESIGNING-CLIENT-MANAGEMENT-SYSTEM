@@ -1,0 +1,116 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-brand-dark: #3E362E;
+  --color-brand-primary: #865D36;
+  --color-brand-secondary: #93785B;
+  --color-brand-accent: #AC8968;
+  --color-brand-muted: #A69080;
+
+  --color-primary-dark: #856c56;
+  --color-primary: #9f8665;
+
+  --color-text: #3E362E;
+  --color-text-light: #a19e96;
+
+  --color-border: #e0e0e0;
+
+  --color-bg-alt: #f5f5f5;
+  --color-bg: #fafafa;
+
+  --color-planning-text: #4d76cc;
+  --color-planning: #e6f0ff;
+  --color-in-progress-text: #cc9c4d;
+  --color-in-progress: #fff8e6;
+  --color-review-text: #9c4dcc;
+  --color-review: #f5e6ff;
+  --color-completed-text: #4dcc7f;
+  --color-completed: #e6fff0;
+  --color-on-hold-text: #808080;
+  --color-on-hold: #f2f2f2;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --border-radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  /* Brand Colors - Replace with your brand colors */
+  --primary-color: #4a6fa5;
+  --secondary-color: #166d89;
+  --accent-color: #48a9a6;
+
+  /* Dashboard specific colors */
+  --projects-color: #4a6fa5;
+  --projects-bg-color: #4a6ea51d;
+  --clients-color: #9c528b;
+  --clients-bg-color: #9c528b1d;
+  --deadlines-color: #e6af2e;
+  --deadlines-bg-color: #e6af2e1d;
+  --appointments-color: #48a9a6;
+  --appointments-bg-color: #48a9a61d;
+
+  /* Status colors */
+  --completed-color: #48a9a6;
+  --in-progress-color: #e6af2e;
+  --pending-color: #95a5a6;
+
+  /* Button colors */
+  --primary-btn-color: #4a6fa5;
+  --primary-btn-hover: #3a5f95;
+
+  /* Client colors */
+  --client-color: #9c528b;
+
+  /* Project colors */
+  --project-color: #4a6fa5;
+  --progress-color: #48a9a6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-body);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
