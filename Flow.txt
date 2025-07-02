@@ -1,0 +1,57 @@
+Key points:
+
+Only invited clients (added by designer) can sign up.
+Signup only sets password in credentials.
+No duplicate or unauthorized accounts possible.
+
+Here’s an explanation of the client invite and signup flow based on your backend (server.js) and the overall architecture:
+
+1. Designer Invites a Client
+The designer uses the app to add a new client.
+The backend:
+Adds the client to the clients collection (with fields like designer_id, email, etc.).
+Adds a record to the credentials collection with the client’s email, id, role: "client", but no password.
+Result:
+The client now exists in both clients and credentials (but cannot log in yet).
+
+2. Client Signup
+The client receives an invite (or is told by the designer to sign up).
+The client goes to the signup page and enters their email and password.
+What happens in the backend:
+The frontend calls POST /clients/signup with { email, password }.
+The backend:
+Checks if the email exists in the credentials collection with role: "client".
+If not: Responds with an error: "You are not invited. Contact your designer."
+Checks if a password is already set for this email.
+If yes: Responds with an error: "Account already exists. Please login."
+If both checks pass, sets the password for this credentials record.
+The client can now log in using their email and password.
+3. Client Login
+The client logs in using their email and password.
+The backend checks the credentials collection for a matching email, role, and password.
+4. Security & Integrity
+Only invited clients (those added by a designer) can sign up.
+Clients cannot create their own client record—they must be invited.
+Clients cannot sign up twice—once a password is set, signup is blocked for that email.
+If a client is deleted, their credentials are also deleted.
+Summary Table
+Step	Collection(s) affected	Who can do it?	What happens?
+Designer adds client	clients, credentials	Designer	Client is added (no password in credentials)
+Client signs up	credentials	Client	Password is set if invited and not already registered
+Client logs in	credentials	Client	Login allowed if email and password match
+Client deleted	clients, credentials	Admin/Designer	Client and their credentials are removed
+This flow ensures only invited clients can sign up and log in, and prevents duplicate or unauthorized accounts.
+
+
+
+
+
+
+vemdor portal , add deleteing of projects and clients functionality to designer and chnage all dollars to ruppess
+
+import { FaRupeeSign } from "react-icons/fa";
+
+<div className="d-flex align-items-center mb-2">
+                          <FaRupeeSign className="text-muted me-2" />
+                          <span>₹{project.budget?.toLocaleString() || 0}</span>
+                        </div>
