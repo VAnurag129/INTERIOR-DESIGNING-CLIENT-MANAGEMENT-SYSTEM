@@ -1,0 +1,41 @@
+{
+  "products": [
+    {
+      "id": "product_001",
+      "name": "Walnut Veneer Panel",
+      "description": "Premium quality walnut veneer panel, 4x8 feet, 1/4 inch thickness",
+      "category": "wood",
+      "vendor_id": "vendor_001",
+      "price": 120,
+      "unit": "panel",
+      "in_stock": true,
+      "stock_quantity": 200,
+      "min_order_quantity": 5,
+      "lead_time": "2 weeks",
+      "images": [
+        "https://unsplash.com/photos/brown-wooden-board-7okkFhxrxNw",
+        "https://unsplash.com/photos/wooden-surface-with-brown-color-MTZTGvDsHFY"
+      ],
+      "specifications": {
+        "material": "Walnut",
+        "size": "4x8 feet",
+        "thickness": "1/4 inch",
+        "finish": "Satin"
+      },
+      "used_in_projects": ["project_001", "project_003"]
+    }
+  ],
+
+  "product_categories": [
+    {
+      "id": "wood",
+      "name": "Wood Materials",
+      "description": "Various wood products including panels, veneers, and solid wood"
+    },
+    {
+      "id": "metal",
+      "name": "Metal Materials",
+      "description": "Various metal products including sheets, rods, and custom pieces"
+    }
+  ]
+}

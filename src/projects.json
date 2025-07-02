@@ -1,0 +1,137 @@
+{
+  "projects": [
+    {
+      "id": "project_001",
+      "title": "Acme Office Redesign",
+      "client_id": "client_001",
+      "designer_id": "designer_001",
+      "status": "completed",
+      "budget": 25000,
+      "timeline": {
+        "start": "2023-06-01",
+        "estimated_end": "2023-09-30",
+        "actual_end": "2023-10-15"
+      },
+      "used_products": ["product_001", "product_003"],
+      "notes": "Modern corporate office redesign with focus on open collaborative spaces. Client is very happy with the final result.",
+      "moodboard": [
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      ]
+    },
+    {
+      "id": "project_002",
+      "title": "Stark R&D Lab",
+      "client_id": "client_002",
+      "designer_id": "designer_002",
+      "status": "active",
+      "budget": 85000,
+      "timeline": {
+        "start": "2023-11-10",
+        "estimated_end": "2024-05-20"
+      },
+      "used_products": ["product_005", "product_007"],
+      "notes": "High-tech research and development lab with emphasis on futuristic design elements and cutting-edge technology integration.",
+      "moodboard": [
+        "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      ]
+    },
+    {
+      "id": "project_003",
+      "title": "Greenwood Villa Interiors",
+      "client_id": "client_003",
+      "designer_id": "designer_001",
+      "status": "active",
+      "budget": 60000,
+      "timeline": {
+        "start": "2024-01-15",
+        "estimated_end": "2024-07-10"
+      },
+      "used_products": ["product_002", "product_004"],
+      "notes": "Luxury residential interiors with natural elements and sustainable materials. Client prefers a mix of contemporary and classic design.",
+      "moodboard": [
+        "https://images.unsplash.com/photo-1616137466211-f939a420be84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      ]
+    },
+    {
+      "id": "project_004",
+      "title": "Highrise Lobby Renovation",
+      "client_id": "client_004",
+      "designer_id": "designer_002",
+      "status": "completed",
+      "budget": 50000,
+      "timeline": {
+        "start": "2023-08-01",
+        "estimated_end": "2023-12-15",
+        "actual_end": "2023-12-20"
+      },
+      "used_products": ["product_006", "product_008"],
+      "notes": "Complete renovation of a corporate building lobby with focus on creating an impressive first impression for visitors and tenants.",
+      "moodboard": [
+        "https://images.unsplash.com/photo-1603991488459-73de26c7c4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1622465414875-cbe9163a13b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      ]
+    },
+    {
+      "id": "project_005",
+      "title": "Luxury Apartment Suite",
+      "client_id": "client_005",
+      "designer_id": "designer_001",
+      "status": "active",
+      "budget": 75000,
+      "timeline": {
+        "start": "2024-02-10",
+        "estimated_end": "2024-09-05"
+      },
+      "used_products": ["product_009", "product_010"],
+      "notes": "High-end apartment renovation with luxury materials and custom furnishings. Client requested a sophisticated modern aesthetic.",
+      "moodboard": [
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      ]
+    },
+    {
+      "id": "project_006",
+      "title": "Tech Startup Office",
+      "client_id": "client_006",
+      "designer_id": "designer_002",
+      "status": "active",
+      "budget": 95000,
+      "timeline": {
+        "start": "2024-03-01",
+        "estimated_end": "2024-10-20"
+      },
+      "used_products": ["product_011", "product_012"],
+      "notes": "Innovative workspace for a growing tech startup. Design emphasizes flexibility, collaboration, and company culture.",
+      "moodboard": [
+        "https://images.unsplash.com/photo-1577412647305-991150c7d163?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1572025442646-866d16c84a54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      ]
+    },
+    {
+      "id": "project_007",
+      "title": "Heritage Museum Interior",
+      "client_id": "client_007",
+      "designer_id": "designer_001",
+      "status": "completed",
+      "budget": 70000,
+      "timeline": {
+        "start": "2023-05-15",
+        "estimated_end": "2023-11-30",
+        "actual_end": "2023-12-10"
+      },
+      "used_products": ["product_013", "product_014"],
+      "notes": "Museum interior redesign that respects the historical character of the building while accommodating modern exhibition needs.",
+      "moodboard": [
+        "https://images.unsplash.com/photo-1574867155539-dd859081e8c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1572891086295-6c1c7c476549?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      ]
+    }
+  ]
+}

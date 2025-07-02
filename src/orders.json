@@ -1,0 +1,58 @@
+{
+  "orders": [
+    {
+      "id": "order_001",
+      "project_id": "project_001",
+      "client_id": "client_001",
+      "designer_id": "designer_001",
+      "vendor_id": "vendor_001",
+      "items": [
+        {
+          "product_id": "product_001",
+          "quantity": 50,
+          "unit_price": 120,
+          "total_price": 6000
+        }
+      ],
+      "order_date": "2023-07-10T14:00:00Z",
+      "status": "completed",
+      "delivery_date": "2023-08-15",
+      "tracking_info": {
+        "carrier": "UPS",
+        "tracking_number": "1Z12345E0205271688",
+        "status": "delivered"
+      },
+      "payment_status": "paid",
+      "total_amount": 6000,
+      "designer_commission": 600
+    }
+  ],
+
+  "payments": [
+    {
+      "id": "payment_001",
+      "order_id": "order_001",
+      "amount": 6000,
+      "payment_date": "2023-07-11T10:30:00Z",
+      "method": "credit_card",
+      "transaction_id": "txn_123456789",
+      "payer_id": "client_001",
+      "recipient_id": "vendor_001",
+      "status": "completed",
+      "fee": 180,
+      "net_amount": 5820
+    },
+    {
+      "id": "payment_002",
+      "designer_id": "designer_001",
+      "amount": 600,
+      "payment_date": "2023-07-15T09:15:00Z",
+      "method": "bank_transfer",
+      "transaction_id": "txn_987654321",
+      "payer_id": "vendor_001",
+      "recipient_id": "designer_001",
+      "status": "completed",
+      "description": "Commission for order_001"
+    }
+  ]
+}

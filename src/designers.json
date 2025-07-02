@@ -1,0 +1,24 @@
+{
+  "designers": [
+    {
+      "id": "designer_001",
+      "name": "Emma Wilson",
+      "email": "emma@designsystem.com",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+      "specializations": ["interior", "furniture"],
+      "hourly_rate": 85,
+      "portfolio": "https://emmawilson.design",
+      "vendor_connections": ["vendor_001", "vendor_003"]
+    },
+    {
+      "id": "designer_002",
+      "name": "James Rodriguez",
+      "email": "james@designsystem.com",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+      "specializations": ["lighting", "industrial"],
+      "hourly_rate": 95,
+      "portfolio": "https://jamesrodriguez.design",
+      "vendor_connections": ["vendor_002"]
+    }
+  ]
+}

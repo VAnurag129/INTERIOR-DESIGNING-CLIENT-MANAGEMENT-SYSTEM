@@ -1,0 +1,102 @@
+{
+  "clients": [
+    {
+      "id": "client_001",
+      "name": "Acme Corporation",
+      "contact_person": "John Smith",
+      "email": "john@acme.com",
+      "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a",
+      "company": {
+        "name": "Acme Corporation",
+        "address": "123 Business Ave, New York",
+        "tax_id": "US-123456789"
+      },
+      "projects": ["project_001", "project_003"],
+      "total_spend": 58200
+    },
+    {
+      "id": "client_002",
+      "name": "Stark Industries",
+      "contact_person": "Pepper Potts",
+      "email": "pepper@stark.com",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+      "company": {
+        "name": "Stark Industries",
+        "address": "2000 Avengers Tower, NYC",
+        "tax_id": "US-987654321"
+      },
+      "projects": ["project_002"],
+      "total_spend": 124000
+    },
+    {
+      "id": "client_003",
+      "name": "Greenwood Constructions",
+      "contact_person": "Michael Johnson",
+      "email": "michael@greenwood.com",
+      "avatar": "https://images.unsplash.com/photo-1589156191108-e0b5a1f4a86b",
+      "company": {
+        "name": "Greenwood Constructions",
+        "address": "45 Oak Street, Boston",
+        "tax_id": "US-564738291"
+      },
+      "projects": ["project_005", "project_007"],
+      "total_spend": 78000
+    },
+    {
+      "id": "client_004",
+      "name": "NextGen Tech",
+      "contact_person": "Alice Morgan",
+      "email": "alice@nextgentech.com",
+      "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
+      "company": {
+        "name": "NextGen Tech",
+        "address": "700 Silicon Valley Rd, San Francisco",
+        "tax_id": "US-334455667"
+      },
+      "projects": ["project_004"],
+      "total_spend": 105000
+    },
+    {
+      "id": "client_005",
+      "name": "Luxury Living Inc.",
+      "contact_person": "Sophia Carter",
+      "email": "sophia@luxuryliving.com",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+      "company": {
+        "name": "Luxury Living Inc.",
+        "address": "500 Sunset Blvd, Los Angeles",
+        "tax_id": "US-998877665"
+      },
+      "projects": ["project_006"],
+      "total_spend": 92000
+    },
+    {
+      "id": "client_006",
+      "name": "Blue Ocean Shipping",
+      "contact_person": "David Wilson",
+      "email": "david@blueocean.com",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde",
+      "company": {
+        "name": "Blue Ocean Shipping",
+        "address": "22 Harbor Street, Miami",
+        "tax_id": "US-223344556"
+      },
+      "projects": ["project_010", "project_011"],
+      "total_spend": 68000
+    },
+    {
+      "id": "client_007",
+      "name": "Heritage Museum Trust",
+      "contact_person": "Richard Brown",
+      "email": "richard@heritagemuseum.com",
+      "avatar": "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
+      "company": {
+        "name": "Heritage Museum Trust",
+        "address": "789 Historic Rd, Washington D.C.",
+        "tax_id": "US-112233445"
+      },
+      "projects": ["project_008", "project_009"],
+      "total_spend": 63000
+    }
+  ]
+}
