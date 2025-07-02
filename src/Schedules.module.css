@@ -1,0 +1,688 @@
+.container {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+.addButton {
+    background-color: #3a86ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+    background-color: #2a75ee;
+}
+
+.calendarView {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.navigationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+}
+
+.navigationControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navButton {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navButton:hover {
+    background-color: #eee;
+}
+
+.currentDate {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+}
+
+.viewControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.viewButton {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #555;
+}
+
+.viewButton.active {
+    background-color: #3a86ff;
+    color: white;
+    border-color: #3a86ff;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th {
+    padding: 12px;
+    text-align: center;
+    font-weight: 500;
+    color: #555;
+    border-bottom: 1px solid #eee;
+}
+
+.calendar td {
+    border: 1px solid #eee;
+    height: 100px;
+    vertical-align: top;
+    padding: 8px;
+}
+
+.dayNumber {
+    font-weight: 500;
+    margin-bottom: 4px;
+    text-align: right;
+    color: #333;
+}
+
+.today {
+    background-color: #f0f7ff;
+}
+
+.outsideMonth {
+    background-color: #f9f9f9;
+    color: #bbb;
+}
+
+.eventsList {
+    margin-top: 24px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.eventsHeader {
+    padding: 16px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+.eventItem {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+.eventItem:hover {
+    background-color: #f9f9f9;
+}
+
+.eventColor {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.confirmed {
+    background-color: #4caf50;
+}
+
+.tentative {
+    background-color: #ff9800;
+}
+
+.pending {
+    background-color: #f44336;
+}
+
+.eventDetails {
+    flex: 1;
+}
+
+.eventTitle {
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.eventInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #666;
+    font-size: 14px;
+}
+
+.eventInfoItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.eventActions {
+    display: flex;
+    gap: 8px;
+}
+
+.actionButton {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionButton:hover {
+    background-color: #eee;
+}
+
+.calendarEvent {
+    padding: 4px 6px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.calendarEvent:hover {
+    transform: translateY(-1px);
+}
+
+.eventConfirmed {
+    background-color: #4caf50;
+}
+
+.eventTentative {
+    background-color: #ff9800;
+}
+
+.eventPending {
+    background-color: #f44336;
+}
+
+/* Modal Styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.modalHeader h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.modalBody {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 20px;
+    border-top: 1px solid #eee;
+    gap: 10px;
+}
+
+.formGroup {
+    margin-bottom: 16px;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.formGroup textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.formRow {
+    display: flex;
+    gap: 16px;
+}
+
+.formRow .formGroup {
+    flex: 1;
+}
+
+.cancelButton {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #555;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.saveButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.saveButton:disabled {
+    background-color: #a5a5a5;
+    cursor: not-allowed;
+}
+
+/* View modal styles */
+.viewTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.viewDetail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+.viewDetail svg {
+    color: #555;
+    margin-top: 5px;
+}
+
+.viewLabel {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.viewDescription {
+    margin-bottom: 16px;
+}
+
+.viewDescription p {
+    margin-top: 4px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.viewStatus {
+    margin-top: 24px;
+}
+
+.statusBadge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.editButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #3a86ff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.deleteButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #e63946;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.confirmText {
+    margin: 20px 0;
+    text-align: center;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Week View Styles */
+.weekViewContainer {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: auto;
+    max-height: 600px;
+}
+
+.weekHeader {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
+    z-index: 10;
+}
+
+.weekTimeColumn {
+    width: 80px;
+    min-width: 80px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    color: #777;
+    border-right: 1px solid #eee;
+}
+
+.weekDayColumn {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.weekDayName {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.weekDayDate {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.todayColumn {
+    background-color: #f0f7ff;
+}
+
+.weekBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.weekRow {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    min-height: 60px;
+}
+
+.weekDayCell {
+    flex: 1;
+    padding: 5px;
+    border-right: 1px solid #eee;
+    min-height: 60px;
+    position: relative;
+}
+
+.todayCell {
+    background-color: #f0f7ff;
+}
+
+.weekEvent {
+    margin: 3px 0;
+    padding: 6px 8px;
+    border-radius: 4px;
+    background-color: #3a86ff;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.weekEvent:hover {
+    transform: translateY(-1px);
+}
+
+.weekEventTime {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+    opacity: 0.9;
+}
+
+.weekEventTitle {
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Day View Styles */
+.dayViewContainer {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: auto;
+    max-height: 600px;
+}
+
+.dayHeader {
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.dayTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.dayBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.dayRow {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    min-height: 60px;
+}
+
+.dayTimeColumn {
+    width: 80px;
+    min-width: 80px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    color: #777;
+    border-right: 1px solid #eee;
+}
+
+.dayEventColumn {
+    flex: 1;
+    padding: 5px;
+    min-height: 60px;
+}
+
+.dayEvent {
+    margin: 5px 0;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #3a86ff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.dayEvent:hover {
+    transform: translateY(-1px);
+}
+
+.dayEventTitle {
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.dayEventTime {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.dayEventLocation {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+/* Status Colors */
+.confirmed,
+.eventConfirmed {
+    background-color: #4caf50;
+}
+
+.pending,
+.eventPending {
+    background-color: #ff9800;
+}
+
+.scheduled,
+.eventScheduled {
+    background-color: #3a86ff;
+}
+
+.cancelled,
+.eventCancelled {
+    background-color: #9e9e9e;
+}
+
+.completed,
+.eventCompleted {
+    background-color: #673ab7;
+}

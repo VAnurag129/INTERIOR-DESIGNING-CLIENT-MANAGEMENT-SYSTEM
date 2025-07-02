@@ -1,0 +1,43 @@
+/* Dashboard Container */
+.dashboardContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+}
+
+/* Dashboard Header */
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  /* Reduced margin-bottom */
+  background-color: #f7f5f2;
+  padding: 0.75rem;
+  /* Reduced padding */
+  border-radius: 0.5rem;
+}
+
+.headerTitle h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.headerTitle p {
+  margin: 0.5rem 0 0;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.2rem;
+  color: #666;
+}
